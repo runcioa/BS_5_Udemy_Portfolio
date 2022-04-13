@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-One Page Website</title>
+    <link rel="stylesheet"
+          href="css/bootstrap.min.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a href="#"
+               class="navbar-brand">Portfolio</a>
+
+            <!-- Button per vederre e non vedere il menu su schermi piccoli 
+            deve agire sulla lista  -->
+            <button class="navbar-toggler"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Ci metto l'id così il button può agire e fare il collapse' -->
+            <div class="collapse navbar-collapse"
+                 id="navBar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href=""
+                           class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href=""
+                           class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href=""
+                           class="nav-link">Portfolio</a>
+                    </li>
+
+                    <li> <a href=""
+                           class="nav-link">Blog</a> </li>
+                    <li> <a href=""
+                           class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+<!-- Imposto l'altezza dellimmagine con min-vh-100' -->
+<!-- Con d-flex imposto che deve essere diviso in colonne, una colonna per ogni lemento child, con flex column ho una colonna e tante righe qunate sono i child -->
+<!-- Con justify-center allineo y  -->
+<!-- Con align-item-center allineo x  -->
+
+    <section id="home" class="d-flex flex-column min-vh-100 justify-content-center align-items-center" style="background-image: url('image/hero-bg.jpg');">
+
+        <h1 class="fw-bolder display-5 mb-3">Lucie Anderson</h1>
+        <h6 class="fs-3 text-secondary text-capitalize mb-4">I'm a professional frontend web developer</h6>
+        <a href="http://" class="btn btn-danger rounded-pill" >About me</a>        
+    </section>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
