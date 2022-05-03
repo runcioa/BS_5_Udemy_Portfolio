@@ -11,13 +11,17 @@
     <link rel="stylesheet"
           href="css/bootstrap.min.css">
     <style>
-
+        .nav-link.active {
+            color: red !important;
+        }
     </style>
 </head>
 
-<body>
+<body data-bs-spy="scroll"
+      data-bs-target="#nav-scroll">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+         id="nav-scroll">
         <div class="container">
             <a href="#"
                class="navbar-brand">Portfolio</a>
@@ -32,21 +36,21 @@
             <!-- Ci metto l'id così il button può agire e fare il collapse' -->
             <div class="collapse navbar-collapse"
                  id="navBar">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto fw-bold">
                     <li class="nav-item">
-                        <a href=""
+                        <a href="#home"
                            class="nav-link">Home</a>
                     </li>
                     <li>
-                        <a href=""
+                        <a href="#about"
                            class="nav-link">About</a>
                     </li>
                     <li>
-                        <a href=""
+                        <a href="#portfolio"
                            class="nav-link">Portfolio</a>
                     </li>
 
-                    <li> <a href=""
+                    <li> <a href="#contact"
                            class="nav-link">Blog</a> </li>
                     <li> <a href=""
                            class="nav-link">Contact</a>
@@ -68,7 +72,7 @@
 
         <h1 class="fw-bolder display-5 mb-3">Lucie Anderson</h1>
         <h6 class="fs-3 text-secondary text-capitalize mb-4">I'm a professional frontend web developer</h6>
-        <a href="http://"
+        <a href="#about"
            class="btn btn-danger rounded-pill">About me</a>
     </section>
 
@@ -281,12 +285,27 @@
                            class="form-label">Your message</label>
 
                     <textarea name="text"
-                           class="form-control" cols="30" rows="8"></textarea>
+                              class="form-control"
+                              cols="30"
+                              rows="8"></textarea>
                 </div>
-                <button type="submit" class="btn btn-danger btn-lg">Send message</button>
+                <button type="submit"
+                        class="btn btn-danger btn-lg">Send message</button>
             </form>
         </div>
     </section>
+
+    <footer class="bg-light">
+        <div class="container text-center">
+            <p class="mb-0 py-3 fs-5">All rights reserved by
+                <a href=""
+                   class="text-danger fst-italic"
+                   target="_blank">Mio sito</a>
+            </p>
+        </div>
+
+    </footer>
+
 
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
